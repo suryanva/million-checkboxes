@@ -7,6 +7,7 @@ export function createExpressApplication(): Express {
 
 
     //Middlewares
+    app.use(express.json())
 
 
 
