@@ -6,19 +6,27 @@
   "scripts": {
     "start": "node dist/index",
     "build": "tsc -p .",
-    "dev": "tsc-watch --onSuccess \"node dist/index.js\""
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "studio": "drizzle-kit studio",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "tsc-watch": "^7.2.0",
-    "typescript": "^6.0.3",
     "@types/express": "^5.0.6",
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "drizzle-kit": "^0.31.10",
+    "tsc-watch": "^7.2.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
     "express": "^5.2.1"
   }
 }
