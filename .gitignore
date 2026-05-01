@@ -118,7 +118,5 @@ dist
 .pnp.*
 
 
-# drizzle
 
-drizzle
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Node
